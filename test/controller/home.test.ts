@@ -4,7 +4,7 @@ import { Framework } from '@midwayjs/web';
 import { createApp, close, createHttpRequest } from '@midwayjs/mock';
 import { Application } from 'egg';
 
-describe('test/controller/home.test.ts', () => {
+describe.only('test/controller/home.test.ts', () => {
   let app: Application;
   let currentUser: any;
   beforeAll(async () => {

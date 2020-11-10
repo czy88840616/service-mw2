@@ -7,5 +7,6 @@ module.exports = {
   coveragePathIgnorePatterns: ['<rootDir>/test/'],
   moduleNameMapper: {
     "^@/(.*)$": '<rootDir>/src/$1'
-  }
+  },
+  setupFilesAfterEnv: [path.join(__dirname, 'test/.setup.js')],
 };
